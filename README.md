@@ -13,7 +13,7 @@ Firebase
 #### Unit Testing  
 Jest
 #### Deployment  
-Heroku Link : https://lirten-hub-overflow.herokuapp.com/  
+Heroku: https://lirten-hub-overflow.herokuapp.com/  
 ## Usage  
 1. `cd` to project root directory
 2. Run `npm install` to install server dependencies
