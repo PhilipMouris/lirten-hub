@@ -9,7 +9,9 @@ Node.js, Express.js, MongoDB
 #### Authentication  
 Passport, JWT  
 #### Push Notifications  
-Firebase
+Firebase  
+#### Unit Testing  
+Jest
 #### Deployment  
 Heroku Link : https://lirten-hub-overflow.herokuapp.com/  
 ## Usage  
