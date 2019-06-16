@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+    const config = {
+      apiKey: "AIzaSyCww59lGaExhAFFK1kkVQxp4EWHoI-mBI0",
+      authDomain: "lirten-hub.firebaseapp.com",
+      databaseURL: "https://lirten-hub.firebaseio.com",
+      projectId: "lirten-hub",
+      storageBucket: "lirten-hub.appspot.com",
+      messagingSenderId: "901639143723"
+    };
+    firebase.initializeApp(config);
+
+    firebase
+      .messaging()
+      .usePublicVapidKey(
+        "BPgRlyFu7oPQNI34lY9AVdRysmu2JTKA-uDq5y62_nx1CcY0RcpuWz5uB189K9yfvTLtG06QvCnYD9QRVaxYgWQ"
+      );
+
+    const perm = () => {
+      firebase
+        .messaging()
+        .requestPermission()
+        .then(function(e = null) {
+          console.log("Granted!" + e);
+
+          return firebase.messaging().getToken();
+        })
+        .then(function(token) {
+          console.log("Token:" + token);
+        })
+        .catch(function(err) {
+          console.log("Error! :: " + err);
+        });
+    };
+
+    firebase.messaging().onMessage(payload => {
+      console.log(payload, "HI THERE");
+    });
+    firebase.messaging().onTokenRefresh(function() {
+      firebase
+        .messaging()
+        .getToken()
+        .then(function(refreshedToken) {
+          console.log("Token refreshed.");
+          // Indicate that the new Instance ID token has not yet been sent to the
+          // app server.
+          setTokenSentToServer(false);
+          // Send Instance ID token to app server.
+          sendTokenToServer(refreshedToken);
+          // ...
+        })
+        .catch(function(err) {
+          console.log("Unable to retrieve refreshed token ", err);
+          showToken("Unable to retrieve refreshed token ", err);
+        });
+    });
+  </script>
+  <body>
+    <h1>Messaging Test</h1>
+    <h2><button type="button" onclick="perm()">HHIIIII</button></h2>
+  </body>
+</html>

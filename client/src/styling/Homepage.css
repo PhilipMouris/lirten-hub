@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@font-face {
+  font-family: ArialBlack;
+  src: url(/assets/ArialBlack.ttf);
+}
+.landing {
+  background-image: url("/assets/landing.jpg");
+  background-size: cover;
+  height: 750px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.landing-text h1 {
+  font-size: 36px;
+  font-family: ArialBlack;
+}
+
+.landing-text p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing-text button {
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 0.7em 1.5em;
+  border-radius: 3px;
+  background: none;
+  border: 3px white solid;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.landing-text button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.landing-showcase {
+  max-height: 45%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.partners-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.partners-section h1 {
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  font-family: ArialBlack;
+}
+
+.partners-section div {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-section div img {
+  height: 60px;
+  margin: 30px;
+}
+
+.partners-section a {
+  margin-top: 25px;
+}
+
+.partners-section button {
+  font-size: 20px;
+  padding: 0.7em 1.5em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.partners-section button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homepage-info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.homepage-info-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+
+.homepage-info-section div h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 14px;
+}
+
+.homepage-info-section div p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.homepage-lifecoaches {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage-lifecoaches h4 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 24px;
+}
+
+.homepage-lifecoaches button {
+  font-size: 20px;
+  padding: 0.7em 1.5em;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.homepage-slider {
+  background-color: white;
+  position: relative;
+}
+
+.homepage-feedback {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  height: 250px;
+  outline: none;
+}
+
+.homepage-feedback div:nth-child(1) {
+  text-align: center;
+}
+
+.homepage-feedback div i {
+  vertical-align: super !important;
+}
+
+.homepage-feedback div p {
+  display: inline;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.homepage-feedback div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-feedback div:nth-child(2) img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.homepage-feedback div:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.homepage-feedback div:nth-child(2) div p {
+  font-size: 16px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.slick-next {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-prev {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+@media (max-width: 1280px) {
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .landing {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-showcase {
+    display: none;
+  }
+  .landing-text {
+    position: static;
+    transform: none;
+    text-align: center;
+    padding: 10px;
+  }
+  .landing-text h1 {
+    font-size: 32px;
+  }
+
+  .landing-text p {
+    font-size: 14px;
+  }
+  .landing-text button {
+    font-size: 16px;
+  }
+  .landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partners-section button {
+    font-size: 16px;
+  }
+  .homepage-info-section {
+    padding: 30px 0;
+  }
+  .homepage-info-section div {
+    width: 90%;
+  }
+  .homepage-info-section div i {
+    margin-top: 14px;
+  }
+  .homepage-lifecoaches h4 {
+    font-size: 20px;
+  }
+  .homepage-lifecoaches button {
+    font-size: 16px;
+  }
+  .homepage-feedback {
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+  .homepage-feedback div p {
+    font-size: 18px;
+  }
+  .homepage-feedback div:nth-child(2) img {
+    width: 80px;
+  }
+  .homepage-feedback div:nth-child(2) {
+    flex-direction: column;
+  }
+  .homepage-feedback div:nth-child(2) div {
+    align-items: center;
+    margin-left: 0;
+  }
+  .homepage-feedback div i {
+    font-size: 16px;
+  }
+}

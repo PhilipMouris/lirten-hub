@@ -1,0 +1,14 @@
+    
+.Superadmin-form {
+    width: 100% !important;
+  }
+  @media (max-width: 1023px) {
+    .Superadmin-form {
+      width: 70% !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .Superadmin-form {
+      width: auto !important;
+    }
+  }

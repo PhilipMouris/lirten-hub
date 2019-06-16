@@ -1,0 +1,13 @@
+.admin-form {
+  width: 100% !important;
+}
+@media (max-width: 1023px) {
+  .admin-form {
+    width: 70% !important;
+  }
+}
+@media (max-width: 767px) {
+  .admin-form {
+    width: auto !important;
+  }
+}
